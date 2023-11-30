@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Your Event Management Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <style>
+        .logo {
+            object-fit: fill;
+            opacity: inherit;
+            padding: 0%;
+            inline-size: 120px;
+            text-decoration-color: black;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="project(event management).html" class="logo">
+              <img src="assets/images/logo main.png" alt="Chain App Dev">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+                <li class="scroll-to-section"><a href="project(event management).html" class="active">Home</a></li>
+                <li class="scroll-to-section"><a href="services.html">Services</a></li>
+                <li class="scroll-to-section"><a href="about.html">About</a></li>
+                <li class="scroll-to-section"><a href="contactus.html">Contact Us</a></li>
+              <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Sign In Now</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  
+  <div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+    </div>
+
+    <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+            <div class="">
+                <a href="#" class="social_box fb">
+                    <span class="icon"><i class="fab fa-facebook"></i></span>
+                    <span class="icon_title">Connect with Facebook</span>
+
+                </a>
+
+                <a href="#" class="social_box google">
+                    <span class="icon"><i class="fab fa-google-plus"></i></span>
+                    <span class="icon_title">Connect with Google</span>
+                </a>
+            </div>
+
+            <div class="centeredText">
+                <span>Or use your Email address</span>
+            </div>
+
+            <div class="action_btns">
+                <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+            </div>
+        </div>
+
+        <!-- Username & Password Login form -->
+        <div class="user_login">
+            <form action="login.php" method="post">
+                <label>Email / Username</label>
+                <input type="text" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="remember" type="checkbox" />
+                    <label for="remember">Remember me on this computer</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                </div>
+            </form>
+
+            <a href="#" class="forgot_password">Forgot password?</a>
+        </div>
+
+        <!-- Register Form -->
+        <div class="user_register">
+            <form>
+                <label>Full Name</label>
+                <input type="text" />
+                <br />
+
+                <label>Email Address</label>
+                <input type="email" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="send_updates" type="checkbox" />
+                    <label for="send_updates">Send me occasional email updates</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+    <!-- ***** Event Management Services Section Start ***** -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="section-heading">
+                        <h2>Event Management Services</h2>
+                        <p style="color: black">Discover our comprehensive event management services tailored to make your events extraordinary.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add details about your event management services -->
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="service-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Event Planning</h3>
+                        <p style="color: black">We plan and coordinate events to perfection, ensuring a seamless and memorable experience.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="service-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Event Staffing</h3>
+                        <p style="color: black">Our skilled and professional staff ensures your event runs smoothly from start to finish.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="service-item">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Technical Support</h3>
+                        <p style="color: black">We provide technical support to make sure all aspects of your event technology are flawless.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Event Management Services Section End ***** -->
+
+    <!-- ***** Blog Section Start ***** -->
+    <section class="section" id="blogs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="section-heading">
+                        <h2 style="text-align: left;">Latest Blogs</h2>
+                        <p style="color: black">Stay informed with our latest blogs on event management trends and tips.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add your latest blog posts here -->
+            <div class="row">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-post">
+                        <img src="image0.png" alt="Blog Post 1">
+                        <div class="blog-content">
+                            <h3><a href="#">Event Trends in 2023</a></h3>
+                            <p style="color: black">Date: January 10, 2023</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <!-- Add more blog posts as needed -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Blog Section End ***** -->
+
+    <!-- ***** About Events Section Start ***** -->
+    <section class="section" id="about-events">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="section-heading">
+                        <h2>About Our Events</h2>
+                        <p style="color: black">Learn more about the type of events we organize and our commitment to creating memorable experiences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="m.jpg" alt="About Events Image">
+                </div>
+                <div class="col-lg-6">
+                    <p style="color: black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p style="color: black">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** About Events Section End ***** -->
+
+    <!-- ***** Functions Information Section Start ***** -->
+    <section class="section" id="functions-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="section-heading">
+                        <h2>Functions Information</h2>
+                        <p style="color: black">Explore details about upcoming functions and events in our calendar.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Marriage Arrangement -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="function-info">
+                        <h3>Marriage Arrangement</h3>
+                        <p style="color:darkgoldenrod ">Date: June 25, 2023</p>
+                        <p style="color:darkgoldenrod ">Venue: Elegant Gardens</p>
+                        <p style="color:darkgoldenrod ">Food: Exquisite catering services</p>
+                        <p style="color:darkgoldenrod ">Decoration: Floral arrangements and themed decor</p>
+                        <p style="color:darkgoldenrod ">Music: Live band and DJ</p>
+                        <p style="color:darkgoldenrod ">Photo Shooting: Professional photographers capturing every moment</p>
+                        <a href="#" class="read-more">Learn More</a>
+                    </div>
+                </div>
+                <!-- Add more event types as needed -->
+            </div>
+
+            <!-- Birthday Party -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="function-info">
+                        <h3>Birthday Party</h3>
+                        <p style="color:darkgoldenrod ">Date: August 10, 2023</p>
+                        <p style="color:darkgoldenrod ">Venue: Joyful Kids Party Place</p>
+                        <p style="color:darkgoldenrod ">Food: Delicious birthday treats and cakes</p>
+                        <p style="color:darkgoldenrod ">Decoration: Colorful balloons and themed decor</p>
+                        <p style="color:darkgoldenrod ">Music: Kids-friendly playlist and entertainers</p>
+                        <p style="color:darkgoldenrod ">Photo Shooting: Fun and candid moments captured</p>
+                        <a href="#" class="read-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Music Event -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="function-info">
+                        <h3>Music Event</h3>
+                        <p style="color:darkgoldenrod ">Date: September 20, 2023</p>
+                        <p style="color:darkgoldenrod ">Venue: Harmony Concert Hall</p>
+                        <p style="color:darkgoldenrod ">Food: Gourmet catering for music enthusiasts</p>
+                        <p style="color:darkgoldenrod ">Decoration: Atmospheric lighting and stage setup</p>
+                        <p style="color:darkgoldenrod ">Music: Live performances by top artists</p>
+                        <p style="color:darkgoldenrod ">Photo Shooting: Capturing the energy of the music scene</p>
+                        <a href="#" class="read-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Functions Information Section End ***** -->
+
+    <!-- ***** Help Message Section Start ***** -->
+    <section class="section" id="help-message">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="section-heading">
+                        <h2 style="color: black;">Need Help?</h2>
+                        <p style="color:black ">Contact our team for assistance or to inquire about our services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Add contact information -->
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p style="color: black"><strong>Address:</strong> Crew Events, Bangalore, India</p>
+                        <p style="color: black"><strong>Phone:</strong> +919***********8</p>
+                        <p style="color: black"><strong>Email:</strong> info@yourcompany.com</p>
+                        <a href="contactus.html">contact</a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+    </div>
+
+            </hr>
+            </br>
+            </br>
+              
+    
+
+    <!-- ***** Footer Section Start ***** -->
+    <footer id="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="section-heading">
+                        <h4>Join our mailing list to receive the news &amp; latest trends</h4>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-3">
+                    <form id="search" action="#" method="GET">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <fieldset>
+                                    <input type="address" name="address" class="email"
+                                        placeholder="Email Address..." autocomplete="on" required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <fieldset>
+                                    <button type="submit" class="main-button">Subscribe Now <i
+                                            class="fa fa-angle-right"></i></button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h4>Contact Us</h4>
+                        <p style="color: black">Bangalore - RJ, 560035, India</p>
+                        <p style="color: black"><a href="#">91+9*********8</a></p>
+                        <p style="color: black"><a href="#">info@company.co</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h4>About Our Company</h4>
+                        <div class="logo">
+                            <img src="assets/images/logo main.png" alt="cultural crest events">
+                        </div>
+                        <p style="color: black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore.</p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="copyright-text">
+                        <p style="color: black">Copyright © 2022 crew events Dev Company. All Rights Reserved.
+                            <br>Design: <a href="https://templatemo.com/" target="_blank" title="css templates">TemplateMo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

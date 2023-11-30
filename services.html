@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crew Events - Event Services</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Add your CSS links and styles here -->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <style>
+      
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Set a medium height for the images within the thumbnails */
+        .thumbnail img {
+            max-height: 70%;
+            width: 70%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        /* Center the thumbnail box within the column */
+        .thumbnail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            transition: background-color 0.3s ease;
+        }
+
+        .thumbnail:hover {
+            background-color: #d2d7d3;
+        }
+
+        /* Adjust caption style */
+        .caption {
+            margin-top: 10px;
+        }
+
+        h3 {
+            color: #2c3e50;
+        }
+
+        p {
+            color: #555;
+        }
+
+        /* Adjust button style */
+        .btn {
+            margin-top: 10px;
+        }
+        .input-group {
+            position: relative;
+        }
+
+        .search-container {
+            position: relative;
+        }
+
+        #search-input {
+            padding-right: 40px; /* Adjust padding to accommodate the icon */
+        }
+
+        #search-icon {
+            position: absolute;
+            right: 10px; /* Adjust right position as needed */
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #555;
+            transition: color 0.3s ease;
+        }
+
+        #search-icon:hover {
+            color: #3498db;
+        }
+       
+        .logo {
+            object-fit: fill;
+            opacity: inherit;
+            padding: 0%;
+            inline-size: 120px;
+            text-decoration-color: black;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="project(event management).html" class="logo">
+                  <img src="assets/images/logo main.png" alt="Chain App Dev">
+                </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li class="scroll-to-section"><a href="project(event management).html" class="active">Home</a></li>
+                    <li class="scroll-to-section"><a href="services.html">Services</a></li>
+                    <li class="scroll-to-section"><a href="about.html">About</a></li>
+                    <li class="scroll-to-section"><a href="contactus.html">Contact Us</a></li>
+                  
+                </ul>        
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+    <div class="container">
+        <!-- Heading for Event Services -->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Event Services</h1>
+            </div>
+        </div>
+
+        <!-- Search Container -->
+        <div class="row search-container">
+            <div class="input-group">
+                <input id="search-input" type="search" class="form-control" placeholder="Search for events..." oninput="filterEvents()">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="search-icon">
+                        <i class="fas fa-search fa-lg"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+   
+
+    
+
+        <!-- Thumbnails -->
+        <div class="row" id="thumbnailsContainer">
+            <!-- Thumbnail 1: Party -->
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="wp7488230-corporate-event-wallpapers.jpg" alt="feather">
+                    <div class="caption">
+                        <h3>Party</h3>
+                        <p>Birthdays and Company Parties</p>
+                        <p id="eventAmount"> <strong>$ 1000 </strong></p>
+                    <!-- Your thumbnail content goes here -->
+                    <p>
+
+                    <button class="btn btn-primary" onclick="redirectToPayment('Party', '$150')">Buy </button>
+                    <button class="btn btn-success" onclick="showPaymentModal('Marriage', '$120')">Add to Watch List</button>
+                        </p>
+                </div>
+            </div>
+
+            <!-- Thumbnail 2: Food -->
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="wp7488391-corporate-event-wallpapers.jpg" alt="Food">
+                    <div class="caption">
+                        <h3>Food</h3>
+                        <p>All types of food</p>
+                        <p id="eventAmount"> <strong>$ 500</strong> </p>
+                        <p>
+                            <button class="btn btn-primary" onclick="redirectToPayment('Food', '$130')">Buy </button>
+                            <button class="btn btn-success" onclick="showPaymentModal('Food', '$130')">Add to Watch List</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="wp10715834-event-management-wallpapers.jpg" alt="Marriage">
+                    <div class="caption">
+                        <h3>Marriage</h3>
+                        <p id="eventAmount"> <strong>$ 10000</strong> </p>
+                        <p>We accept all types of marriage functions</p>
+                        <p>
+                            <button class="btn btn-primary" onclick="redirectToPayment('Marriage', '$120')">Buy</button>
+                            <button class="btn btn-success" onclick="showPaymentModal('Marriage', '$120')">Add to Watch List</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            
+            </div>
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="4.jpg" alt="Music Concert">
+                    <div class="caption">
+                        <h3>Music Concert</h3>
+                        <p>Concert</p>
+                        <p id="eventAmount"><strong> $ 8000</strong> </p>
+                        <p>
+                            <button class="btn btn-primary" onclick="redirectToPayment('Music Concert', '$190')">Buy </button>
+                            <button class="btn btn-success" onclick="showPaymentModal('Music Concert', '$190')">Add to Watch List</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thumbnail 5: Dance -->
+            <div class="col-lg-12">
+                <div class="thumbnail">
+                    <img src="wp10715816-event-management-wallpapers.jpg" alt="Dance">
+                    <div class="caption">
+                        <h3 >Dance</h3>
+                        <p>Dance competition</p>
+                        <p id="eventAmount"> <strong>$ 20000</strong> </p>
+                        <p>
+                            <button class="btn btn-primary" onclick="redirectToPayment('Dance', '$180')">Buy </button>
+                            <button class="btn btn-success" onclick="showPaymentModal('Dance', '$180')">Add to Watch List</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Add more thumbnails as needed -->
+        </div>
+    </div>
+
+    <!-- Add a script to handle redirection -->
+    <script>
+         function buyButtonClick(eventName, amount) {
+        // Set event name and amount in the payment form
+        $('#eventName').val(eventName);
+        $('#billAmount').val('$' + amount);
+
+        // Show the payment modal
+        $('#paymentModal').modal('show');
+
+        // Redirect to another page with the bill amount
+        window.location.href = 'redirect-page.html?billAmount=' + amount;
+    }
+        
+        <!-- Add this script in your HTML file -->
+
+    function filterEvents() {
+        // Your existing filterEvents function
+    }
+
+    $('#paymentModal').on('show.bs.modal', function (event) {
+        // Your existing modal show event
+    });
+
+    function showPaymentModal(eventName, amount) {
+        $('#eventName').val(eventName);
+        $('event amount').val('$' + amount);
+        $('#paymentModal').modal('show');
+        alert('Bill Amount: $' + amount);
+    }
+
+    $('#paymentForm').submit(function (event) {
+        event.preventDefault();
+        var cardNumber = $('#cardNumber').val();
+        alert('Payment submitted successfully!\nCard Number: ' + cardNumber);
+        $('#paymentModal').modal('hide');
+    });
+
+    function togglePaymentFields() {
+        // Your existing togglePaymentFields function
+    }
+
+    function submitPayment() {
+        // Your existing submitPayment function
+    }
+
+    function redirectToPayment(eventName, amount) {
+        // Set event name and amount in localStorage
+        localStorage.setItem('paymentEventName', eventName);
+        localStorage.setItem('paymentAmount', amount);
+
+        // Redirect to the payment page
+        window.location.href = 'payments.html';
+    }
+
+    // Function to read bill amount from paragraph and redirect
+    function redirectToPaymentFromButton() {
+        // Read the amount from the paragraph
+        var amountParagraph = document.getElementById('eventAmount');
+        var amount = amountParagraph.textContent.trim();
+
+        // Call the existing function to redirect with the amount
+        redirectToPayment('EventName', amount);
+    }
+</script>
+
+    </script>
+
+    <!-- Add your other scripts and JavaScript links here -->
+
+</body>
+</html>
