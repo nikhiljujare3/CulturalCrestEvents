@@ -1,10 +1,11 @@
-echo "# CulturalCrestEvents" >> README.md
-mkdir html_files
-echo "<html><body>Event Management Project</body></html>" > html_files/project\(event\ management\).html
+echo "# nk.gitnk" >> README.md
+  git init
+  git add README.md
+  git commit -m "project(event management).html"
+  git branch -M main
+  git remote add origin https://github.com/nikhiljujare3/nk.gitnk.git
+  git push -u origin main
+  git remote add origin https://github.com/nikhiljujare3/CulturalCrestEvents/blob/main/project(event%20management).html
+  git branch -M main
+  git push -u origin main
 
-git init
-git add README.md html_files/project\(event\ management\).html
-git commit -m "Initial commit for CulturalCrestEvents"
-git branch -M main
-git remote add origin https://github.com/nikhiljujare3/CulturalCrestEvents.git
-git push -u origin main
